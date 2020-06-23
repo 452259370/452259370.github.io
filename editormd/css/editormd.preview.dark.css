@@ -2459,11 +2459,11 @@
     src: url(data:font/woff;charset=utf-8;base64,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) format("woff");
 }
 
-.markdown-body {
+.markdown-body-dark {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     /*修改，文字颜色*/
-    color: #333;
+    color: #aaa;
     overflow: hidden;
     font-family: "Microsoft YaHei", Helvetica, "Meiryo UI", "Malgun Gothic", "Segoe UI", "Trebuchet MS", "Monaco", monospace, Tahoma, STXihei, "华文细黑", STHeiti, "Helvetica Neue", "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, "宋体", Heiti, "黑体", sans-serif;
     font-size: 16px;
@@ -2471,106 +2471,119 @@
     word-wrap: break-word;
 }
 
-.markdown-body a {
+/*修改,夜间模式*/
+.markdown-body-dark-dark {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    /*修改，文字颜色*/
+    color: #aaa;
+    overflow: hidden;
+    font-family: "Microsoft YaHei", Helvetica, "Meiryo UI", "Malgun Gothic", "Segoe UI", "Trebuchet MS", "Monaco", monospace, Tahoma, STXihei, "华文细黑", STHeiti, "Helvetica Neue", "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, "宋体", Heiti, "黑体", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.markdown-body-dark a {
     background: transparent;
 }
 
-.markdown-body a:active,
-.markdown-body a:hover {
+.markdown-body-dark a:active,
+.markdown-body-dark a:hover {
     outline: 0;
 }
 
-.markdown-body strong {
+.markdown-body-dark strong {
     font-weight: bold;
 }
 
-.markdown-body h1 {
+.markdown-body-dark h1 {
     font-size: 2em;
     margin: 0.67em 0;
 }
 
-.markdown-body img {
+.markdown-body-dark img {
     border: 0;
 }
 
-.markdown-body hr {
+.markdown-body-dark hr {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     height: 0;
 }
 
-.markdown-body pre {
+.markdown-body-dark pre {
     overflow: auto;
 }
 
-.markdown-body code,
-.markdown-body kbd,
-.markdown-body pre {
+.markdown-body-dark code,
+.markdown-body-dark kbd,
+.markdown-body-dark pre {
     font-family: "Meiryo UI", "YaHei Consolas Hybrid", Consolas, "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, monospace, monospace;
     font-size: 1em;
 }
 
-.markdown-body input {
+.markdown-body-dark input {
     color: inherit;
     font: inherit;
     margin: 0;
 }
 
-.markdown-body html input[disabled] {
+.markdown-body-dark html input[disabled] {
     cursor: default;
 }
 
-.markdown-body input {
+.markdown-body-dark input {
     line-height: normal;
 }
 
-.markdown-body input[type="checkbox"] {
+.markdown-body-dark input[type="checkbox"] {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
 }
 
-.markdown-body table {
+.markdown-body-dark table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-.markdown-body td,
-.markdown-body th {
+.markdown-body-dark td,
+.markdown-body-dark th {
     padding: 0;
 }
 
-.markdown-body * {
+.markdown-body-dark * {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.markdown-body input {
+.markdown-body-dark input {
     font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.markdown-body a {
+.markdown-body-dark a {
     color: #4183c4;
     text-decoration: none;
 }
 
-.markdown-body a:hover,
-.markdown-body a:active {
+.markdown-body-dark a:hover,
+.markdown-body-dark a:active {
     text-decoration: underline;
 }
 
 /*修改，选中颜色*/
-.markdown-body a::selection {
+.markdown-body-dark a::selection {
     color: #fff;
     background: #4183c4;
 }
 
-.markdown-body a::-moz-selection {
+.markdown-body-dark a::-moz-selection {
     color: #fff;
     background: #4183c4;
 }
 
-.markdown-body hr {
+.markdown-body-dark hr {
     height: 0;
     margin: 15px 0;
     overflow: hidden;
@@ -2579,23 +2592,23 @@
     border-bottom: 1px solid #ddd;
 }
 
-.markdown-body hr:before {
+.markdown-body-dark hr:before {
     display: table;
     content: "";
 }
 
-.markdown-body hr:after {
+.markdown-body-dark hr:after {
     display: table;
     clear: both;
     content: "";
 }
 
-.markdown-body h1,
-.markdown-body h2,
-.markdown-body h3,
-.markdown-body h4,
-.markdown-body h5,
-.markdown-body h6 {
+.markdown-body-dark h1,
+.markdown-body-dark h2,
+.markdown-body-dark h3,
+.markdown-body-dark h4,
+.markdown-body-dark h5,
+.markdown-body-dark h6 {
     margin-top: 15px;
     margin-bottom: 15px;
     line-height: 1.1;
@@ -2603,69 +2616,69 @@
     color: #1976d2;
 }
 
-.markdown-body h1 {
+.markdown-body-dark h1 {
     font-size: 30px;
 }
 
-.markdown-body h2 {
+.markdown-body-dark h2 {
     font-size: 21px;
 }
 
-.markdown-body h3 {
+.markdown-body-dark h3 {
     font-size: 16px;
 }
 
-.markdown-body h4 {
+.markdown-body-dark h4 {
     font-size: 14px;
 }
 
-.markdown-body h5 {
+.markdown-body-dark h5 {
     font-size: 12px;
 }
 
-.markdown-body h6 {
+.markdown-body-dark h6 {
     font-size: 11px;
 }
 
-.markdown-body blockquote {
+.markdown-body-dark blockquote {
     margin: 0;
 }
 
-.markdown-body ul,
-.markdown-body ol {
+.markdown-body-dark ul,
+.markdown-body-dark ol {
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.markdown-body ol ol,
-.markdown-body ul ol {
+.markdown-body-dark ol ol,
+.markdown-body-dark ul ol {
     list-style-type: lower-roman;
 }
 
-.markdown-body ul ul ol,
-.markdown-body ul ol ol,
-.markdown-body ol ul ol,
-.markdown-body ol ol ol {
+.markdown-body-dark ul ul ol,
+.markdown-body-dark ul ol ol,
+.markdown-body-dark ol ul ol,
+.markdown-body-dark ol ol ol {
     list-style-type: lower-alpha;
 }
 
-.markdown-body dd {
+.markdown-body-dark dd {
     margin-left: 0;
 }
 
-.markdown-body code {
+.markdown-body-dark code {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 12px;
 }
 
-.markdown-body pre {
+.markdown-body-dark pre {
     margin-top: 0;
     margin-bottom: 0;
     font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
-.markdown-body .octicon {
+.markdown-body-dark .octicon {
     font: normal normal 16px octicons-anchor;
     line-height: 1;
     display: inline-block;
@@ -2678,19 +2691,19 @@
     user-select: none;
 }
 
-.markdown-body .octicon-link:before {
+.markdown-body-dark .octicon-link:before {
     content: '\f05c';
 }
 
-.markdown-body > *:first-child {
+.markdown-body-dark > *:first-child {
     margin-top: 0 !important;
 }
 
-.markdown-body > *:last-child {
+.markdown-body-dark > *:last-child {
     margin-bottom: 0 !important;
 }
 
-.markdown-body .anchor {
+.markdown-body-dark .anchor {
     position: absolute;
     top: 0;
     left: 0;
@@ -2700,16 +2713,16 @@
     margin-left: -30px;
 }
 
-.markdown-body .anchor:focus {
+.markdown-body-dark .anchor:focus {
     outline: none;
 }
 
-.markdown-body h1,
-.markdown-body h2,
-.markdown-body h3,
-.markdown-body h4,
-.markdown-body h5,
-.markdown-body h6 {
+.markdown-body-dark h1,
+.markdown-body-dark h2,
+.markdown-body-dark h3,
+.markdown-body-dark h4,
+.markdown-body-dark h5,
+.markdown-body-dark h6 {
     position: relative;
     margin-top: 1em;
     margin-bottom: 16px;
@@ -2717,59 +2730,59 @@
     line-height: 1.4;
 }
 
-.markdown-body h1 .octicon-link,
-.markdown-body h2 .octicon-link,
-.markdown-body h3 .octicon-link,
-.markdown-body h4 .octicon-link,
-.markdown-body h5 .octicon-link,
-.markdown-body h6 .octicon-link {
+.markdown-body-dark h1 .octicon-link,
+.markdown-body-dark h2 .octicon-link,
+.markdown-body-dark h3 .octicon-link,
+.markdown-body-dark h4 .octicon-link,
+.markdown-body-dark h5 .octicon-link,
+.markdown-body-dark h6 .octicon-link {
     display: none;
     color: #000;
     vertical-align: middle;
 }
 
 /*修改，选中颜色*/
-.markdown-body h1::selection,
-.markdown-body h2::selection,
-.markdown-body h3::selection,
-.markdown-body h4::selection,
-.markdown-body h5::selection,
-.markdown-body h6::selection {
+.markdown-body-dark h1::selection,
+.markdown-body-dark h2::selection,
+.markdown-body-dark h3::selection,
+.markdown-body-dark h4::selection,
+.markdown-body-dark h5::selection,
+.markdown-body-dark h6::selection {
     color: #fff;
     background: #1976d2;
 }
 
-.markdown-body h1::-moz-selection,
-.markdown-body h2::-moz-selection,
-.markdown-body h3::-moz-selection,
-.markdown-body h4::-moz-selection,
-.markdown-body h5::-moz-selection,
-.markdown-body h6::-moz-selection {
+.markdown-body-dark h1::-moz-selection,
+.markdown-body-dark h2::-moz-selection,
+.markdown-body-dark h3::-moz-selection,
+.markdown-body-dark h4::-moz-selection,
+.markdown-body-dark h5::-moz-selection,
+.markdown-body-dark h6::-moz-selection {
     color: #fff;
     background: #1976d2;
 }
 
-.markdown-body h1:hover .anchor,
-.markdown-body h2:hover .anchor,
-.markdown-body h3:hover .anchor,
-.markdown-body h4:hover .anchor,
-.markdown-body h5:hover .anchor,
-.markdown-body h6:hover .anchor {
+.markdown-body-dark h1:hover .anchor,
+.markdown-body-dark h2:hover .anchor,
+.markdown-body-dark h3:hover .anchor,
+.markdown-body-dark h4:hover .anchor,
+.markdown-body-dark h5:hover .anchor,
+.markdown-body-dark h6:hover .anchor {
     padding-left: 8px;
     margin-left: -30px;
     text-decoration: none;
 }
 
-.markdown-body h1:hover .anchor .octicon-link,
-.markdown-body h2:hover .anchor .octicon-link,
-.markdown-body h3:hover .anchor .octicon-link,
-.markdown-body h4:hover .anchor .octicon-link,
-.markdown-body h5:hover .anchor .octicon-link,
-.markdown-body h6:hover .anchor .octicon-link {
+.markdown-body-dark h1:hover .anchor .octicon-link,
+.markdown-body-dark h2:hover .anchor .octicon-link,
+.markdown-body-dark h3:hover .anchor .octicon-link,
+.markdown-body-dark h4:hover .anchor .octicon-link,
+.markdown-body-dark h5:hover .anchor .octicon-link,
+.markdown-body-dark h6:hover .anchor .octicon-link {
     display: inline-block;
 }
 
-.markdown-body h1 {
+.markdown-body-dark h1 {
     padding-bottom: 0.3em;
     font-size: 2.25em;
     line-height: 1.2;
@@ -2778,11 +2791,11 @@
     border-bottom: 1px solid #666;
 }
 
-.markdown-body h1 .anchor {
+.markdown-body-dark h1 .anchor {
     line-height: 1;
 }
 
-.markdown-body h2 {
+.markdown-body-dark h2 {
     padding-bottom: 0.3em;
     font-size: 1.75em;
     line-height: 1.225;
@@ -2791,86 +2804,86 @@
     border-bottom: 1px solid #666;
 }
 
-.markdown-body h2 .anchor {
+.markdown-body-dark h2 .anchor {
     line-height: 1;
 }
 
-.markdown-body h3 {
+.markdown-body-dark h3 {
     font-size: 1.5em;
     line-height: 1.43;
 }
 
-.markdown-body h3 .anchor {
+.markdown-body-dark h3 .anchor {
     line-height: 1.2;
 }
 
-.markdown-body h4 {
+.markdown-body-dark h4 {
     font-size: 1.25em;
 }
 
-.markdown-body h4 .anchor {
+.markdown-body-dark h4 .anchor {
     line-height: 1.2;
 }
 
-.markdown-body h5 {
+.markdown-body-dark h5 {
     font-size: 1em;
 }
 
-.markdown-body h5 .anchor {
+.markdown-body-dark h5 .anchor {
     line-height: 1.1;
 }
 
-.markdown-body h6 {
+.markdown-body-dark h6 {
     font-size: 1em;
     /*修改，注释掉原先的颜色*/
     /*color: #777;*/
 }
 
-.markdown-body h6 .anchor {
+.markdown-body-dark h6 .anchor {
     line-height: 1.1;
 }
 
-.markdown-body p,
-.markdown-body blockquote,
-.markdown-body ul,
-.markdown-body ol,
-.markdown-body dl,
-.markdown-body table,
-.markdown-body pre {
+.markdown-body-dark p,
+.markdown-body-dark blockquote,
+.markdown-body-dark ul,
+.markdown-body-dark ol,
+.markdown-body-dark dl,
+.markdown-body-dark table,
+.markdown-body-dark pre {
     margin-top: 0;
     margin-bottom: 16px;
 }
 
 /*
-.markdown-body hr {
+.markdown-body-dark hr {
   height: 4px;
   padding: 0;
   margin: 16px 0;
   background-color: #e7e7e7;
   border: 0 none;
 }*/
-.markdown-body ul,
-.markdown-body ol {
+.markdown-body-dark ul,
+.markdown-body-dark ol {
     padding-left: 2em;
 }
 
-.markdown-body ul ul,
-.markdown-body ul ol,
-.markdown-body ol ol,
-.markdown-body ol ul {
+.markdown-body-dark ul ul,
+.markdown-body-dark ul ol,
+.markdown-body-dark ol ol,
+.markdown-body-dark ol ul {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.markdown-body li > p {
+.markdown-body-dark li > p {
     margin-top: 16px;
 }
 
-.markdown-body dl {
+.markdown-body-dark dl {
     padding: 0;
 }
 
-.markdown-body dl dt {
+.markdown-body-dark dl dt {
     padding: 0;
     margin-top: 16px;
     font-size: 1em;
@@ -2878,26 +2891,26 @@
     font-weight: bold;
 }
 
-.markdown-body dl dd {
+.markdown-body-dark dl dd {
     padding: 0 16px;
     margin-bottom: 16px;
 }
 
-.markdown-body blockquote {
+.markdown-body-dark blockquote {
     padding: 0 15px;
     color: #777;
     border-left: 4px solid #ddd;
 }
 
-.markdown-body blockquote > :first-child {
+.markdown-body-dark blockquote > :first-child {
     margin-top: 0;
 }
 
-.markdown-body blockquote > :last-child {
+.markdown-body-dark blockquote > :last-child {
     margin-bottom: 0;
 }
 
-.markdown-body table {
+.markdown-body-dark table {
     display: block;
     width: 100%;
     overflow: auto;
@@ -2905,32 +2918,32 @@
     word-break: keep-all;
 }
 
-.markdown-body table th {
+.markdown-body-dark table th {
     font-weight: bold;
 }
 
-.markdown-body table th,
-.markdown-body table td {
+.markdown-body-dark table th,
+.markdown-body-dark table td {
     padding: 6px 13px;
     border: 1px solid #ddd;
 }
 
-.markdown-body table tr {
+.markdown-body-dark table tr {
     background-color: #fff;
     border-top: 1px solid #ccc;
 }
 
-.markdown-body table tr:nth-child(2n) {
+.markdown-body-dark table tr:nth-child(2n) {
     background-color: #f8f8f8;
 }
 
-.markdown-body img {
+.markdown-body-dark img {
     max-width: 100%;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.markdown-body code {
+.markdown-body-dark code {
     padding: 0;
     padding-top: 0.2em;
     padding-bottom: 0.2em;
@@ -2940,13 +2953,13 @@
     border-radius: 3px;
 }
 
-.markdown-body code:before,
-.markdown-body code:after {
+.markdown-body-dark code:before,
+.markdown-body-dark code:after {
     letter-spacing: -0.2em;
     content: "\00a0";
 }
 
-.markdown-body pre > code {
+.markdown-body-dark pre > code {
     padding: 0;
     margin: 0;
     font-size: 100%;
@@ -2956,12 +2969,12 @@
     border: 0;
 }
 
-.markdown-body .highlight {
+.markdown-body-dark .highlight {
     margin-bottom: 16px;
 }
 
-.markdown-body .highlight pre,
-.markdown-body pre {
+.markdown-body-dark .highlight pre,
+.markdown-body-dark pre {
     padding: 16px;
     overflow: auto;
     font-size: 85%;
@@ -2970,16 +2983,16 @@
     border-radius: 3px;
 }
 
-.markdown-body .highlight pre {
+.markdown-body-dark .highlight pre {
     margin-bottom: 0;
     word-break: normal;
 }
 
-.markdown-body pre {
+.markdown-body-dark pre {
     word-wrap: normal;
 }
 
-.markdown-body pre code {
+.markdown-body-dark pre code {
     display: inline;
     max-width: initial;
     padding: 0;
@@ -2991,12 +3004,12 @@
     border: 0;
 }
 
-.markdown-body pre code:before,
-.markdown-body pre code:after {
+.markdown-body-dark pre code:before,
+.markdown-body-dark pre code:after {
     content: normal;
 }
 
-.markdown-body kbd {
+.markdown-body-dark kbd {
     display: inline-block;
     padding: 3px 5px;
     font-size: 11px;
@@ -3010,119 +3023,119 @@
     box-shadow: inset 0 -1px 0 #bbb;
 }
 
-.markdown-body .pl-c {
+.markdown-body-dark .pl-c {
     color: #969896;
 }
 
-.markdown-body .pl-c1,
-.markdown-body .pl-mdh,
-.markdown-body .pl-mm,
-.markdown-body .pl-mp,
-.markdown-body .pl-mr,
-.markdown-body .pl-s1 .pl-v,
-.markdown-body .pl-s3,
-.markdown-body .pl-sc,
-.markdown-body .pl-sv {
+.markdown-body-dark .pl-c1,
+.markdown-body-dark .pl-mdh,
+.markdown-body-dark .pl-mm,
+.markdown-body-dark .pl-mp,
+.markdown-body-dark .pl-mr,
+.markdown-body-dark .pl-s1 .pl-v,
+.markdown-body-dark .pl-s3,
+.markdown-body-dark .pl-sc,
+.markdown-body-dark .pl-sv {
     color: #0086b3;
 }
 
-.markdown-body .pl-e,
-.markdown-body .pl-en {
+.markdown-body-dark .pl-e,
+.markdown-body-dark .pl-en {
     color: #795da3;
 }
 
-.markdown-body .pl-s1 .pl-s2,
-.markdown-body .pl-smi,
-.markdown-body .pl-smp,
-.markdown-body .pl-stj,
-.markdown-body .pl-vo,
-.markdown-body .pl-vpf {
+.markdown-body-dark .pl-s1 .pl-s2,
+.markdown-body-dark .pl-smi,
+.markdown-body-dark .pl-smp,
+.markdown-body-dark .pl-stj,
+.markdown-body-dark .pl-vo,
+.markdown-body-dark .pl-vpf {
     color: #333;
 }
 
-.markdown-body .pl-ent {
+.markdown-body-dark .pl-ent {
     color: #63a35c;
 }
 
-.markdown-body .pl-k,
-.markdown-body .pl-s,
-.markdown-body .pl-st {
+.markdown-body-dark .pl-k,
+.markdown-body-dark .pl-s,
+.markdown-body-dark .pl-st {
     color: #a71d5d;
 }
 
-.markdown-body .pl-pds,
-.markdown-body .pl-s1,
-.markdown-body .pl-s1 .pl-pse .pl-s2,
-.markdown-body .pl-sr,
-.markdown-body .pl-sr .pl-cce,
-.markdown-body .pl-sr .pl-sra,
-.markdown-body .pl-sr .pl-sre,
-.markdown-body .pl-src {
+.markdown-body-dark .pl-pds,
+.markdown-body-dark .pl-s1,
+.markdown-body-dark .pl-s1 .pl-pse .pl-s2,
+.markdown-body-dark .pl-sr,
+.markdown-body-dark .pl-sr .pl-cce,
+.markdown-body-dark .pl-sr .pl-sra,
+.markdown-body-dark .pl-sr .pl-sre,
+.markdown-body-dark .pl-src {
     color: #df5000;
 }
 
-.markdown-body .pl-mo,
-.markdown-body .pl-v {
+.markdown-body-dark .pl-mo,
+.markdown-body-dark .pl-v {
     color: #1d3e81;
 }
 
-.markdown-body .pl-id {
+.markdown-body-dark .pl-id {
     color: #b52a1d;
 }
 
-.markdown-body .pl-ii {
+.markdown-body-dark .pl-ii {
     background-color: #b52a1d;
     color: #f8f8f8;
 }
 
-.markdown-body .pl-sr .pl-cce {
+.markdown-body-dark .pl-sr .pl-cce {
     color: #63a35c;
     font-weight: bold;
 }
 
-.markdown-body .pl-ml {
+.markdown-body-dark .pl-ml {
     color: #693a17;
 }
 
-.markdown-body .pl-mh,
-.markdown-body .pl-mh .pl-en,
-.markdown-body .pl-ms {
+.markdown-body-dark .pl-mh,
+.markdown-body-dark .pl-mh .pl-en,
+.markdown-body-dark .pl-ms {
     color: #1d3e81;
     font-weight: bold;
 }
 
-.markdown-body .pl-mq {
+.markdown-body-dark .pl-mq {
     color: #008080;
 }
 
-.markdown-body .pl-mi {
+.markdown-body-dark .pl-mi {
     color: #333;
     font-style: italic;
 }
 
-.markdown-body .pl-mb {
+.markdown-body-dark .pl-mb {
     color: #333;
     font-weight: bold;
 }
 
-.markdown-body .pl-md,
-.markdown-body .pl-mdhf {
+.markdown-body-dark .pl-md,
+.markdown-body-dark .pl-mdhf {
     background-color: #ffecec;
     color: #bd2c00;
 }
 
-.markdown-body .pl-mdht,
-.markdown-body .pl-mi1 {
+.markdown-body-dark .pl-mdht,
+.markdown-body-dark .pl-mi1 {
     background-color: #eaffea;
     color: #55a532;
 }
 
-.markdown-body .pl-mdr {
+.markdown-body-dark .pl-mdr {
     color: #795da3;
     font-weight: bold;
 }
 
-.markdown-body kbd {
+.markdown-body-dark kbd {
     display: inline-block;
     padding: 3px 5px;
     font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -3136,21 +3149,21 @@
     box-shadow: inset 0 -1px 0 #bbb;
 }
 
-.markdown-body .task-list-item {
+.markdown-body-dark .task-list-item {
     list-style-type: none;
 }
 
-.markdown-body .task-list-item + .task-list-item {
+.markdown-body-dark .task-list-item + .task-list-item {
     margin-top: 3px;
 }
 
-.markdown-body .task-list-item input {
+.markdown-body-dark .task-list-item input {
     float: left;
     margin: 0.3em 0 0.25em -1.6em;
     vertical-align: middle;
 }
 
-.markdown-body :checked + .radio-label {
+.markdown-body-dark :checked + .radio-label {
     z-index: 1;
     position: relative;
     border-color: #4183c4;
@@ -3605,11 +3618,11 @@ li.L9 {
     font-size: 1.3em;
 }
 
-.markdown-body .editormd-toc-menu ul {
+.markdown-body-dark .editormd-toc-menu ul {
     padding-left: 0;
 }
 
-.markdown-body .highlight pre, .markdown-body pre {
+.markdown-body-dark .highlight pre, .markdown-body-dark pre {
     line-height: 1.6;
 }
 
