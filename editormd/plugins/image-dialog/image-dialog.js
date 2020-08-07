@@ -46,14 +46,34 @@
                     action += "&callback=" + settings.uploadCallbackURL + "&dialog_id=editormd-image-dialog-" + guid;
                 }
 
+                var CallBackJS = "<script>" +
+                                "function mdUpload(file) {" +
+                                "let formData = new FormData();formData.append('file',file);" +
+                                // "formData.append('path','e://桌面//');" +
+                                "window.axios.post(" +
+                                    "window.API.URL.UPLOAD_ONE_FILE," +
+                                    "formData," +
+                                    "{headers:{'content-type':'multipart/form-data'}}" +
+                                ").then(result=>{" +
+                                        // "console.log(result);" +
+                                        "document.getElementById('json-body-ht').innerText = JSON.stringify(" +
+                                            "{success:1,url:result.data.data,message:'OK'}" +
+                                        ");" +
+                                    "})" +
+                                " }" +
+                                "</script>";
+
                 var dialogContent = ( (settings.imageUpload) ? "<form action=\"" + action +"\" target=\"" + iframeName + "\" method=\"post\" enctype=\"multipart/form-data\" class=\"" + classPrefix + "form\">" : "<div class=\"" + classPrefix + "form\">" ) +
                                         ( (settings.imageUpload) ? "<iframe name=\"" + iframeName + "\" id=\"" + iframeName + "\" guid=\"" + guid + "\"></iframe>" : "" ) +
                                         "<label>" + imageLang.url + "</label>" +
                                         "<input type=\"text\" data-url />" + (function(){
                                             return (settings.imageUpload) ? "<div class=\"" + classPrefix + "file-input\">" +
-                                                                                "<input type=\"file\" name=\"" + classPrefix + "image-file\" accept=\"image/*\" />" +
+                                                                                "<pre id='json-body-ht' style='display: none'></pre>" +
+                                                                                "<input onchange='mdUpload(this.files[0])' type=\"file\" name=\"" + classPrefix + "image-file\" accept=\"image/*\" />" +
+                                                                                // "<input type=\"file\" name=\"" + classPrefix + "image-file\" accept=\"image/*\" />" +
                                                                                 "<input type=\"submit\" value=\"" + imageLang.uploadButton + "\" />" +
-                                                                            "</div>" : "";
+                                                                                "</div>" + CallBackJS : "";
+                                                                                // "</div>" : "";
                                         })() +
                                         "<br/>" +
                                         "<label>" + imageLang.alt + "</label>" +
@@ -119,7 +139,7 @@
 
                             //删除对话框
                             this.remove();
-                            
+
                             return false;
                         }]
                     }
@@ -161,7 +181,8 @@
 
                             loading(false);
 
-                            var body = (uploadIframe.contentWindow ? uploadIframe.contentWindow : uploadIframe.contentDocument).document.body;
+                            // var body = (uploadIframe.contentWindow ? uploadIframe.contentWindow : uploadIframe.contentDocument).document.body;
+                            var body = document.getElementById('json-body-ht');
                             var json = (body.innerText) ? body.innerText : ( (body.textContent) ? body.textContent : null);
 
                             json = (typeof JSON.parse !== "undefined") ? JSON.parse(json) : eval("(" + json + ")");

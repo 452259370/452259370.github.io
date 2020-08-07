@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0b8e72"],{3153:function(e,n,a){"use strict";a.r(n);var t=function(){var e=this,n=e.$createElement,a=e._self._c||n;return a("div",[e._v(" 新增分类 ")])},c=[],u={name:"NewType"},r=u,s=a("2877"),i=Object(s["a"])(r,t,c,!1,null,"21eaaa10",null);n["default"]=i.exports}}]);
-//# sourceMappingURL=chunk-2d0b8e72.2bdb9eea.js.map
