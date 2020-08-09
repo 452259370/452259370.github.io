@@ -48,8 +48,9 @@
 
                 var CallBackJS = "<script>" +
                                 "function mdUpload(file) {" +
+                                // "console.log(window.articleUUID);" +
                                 "let formData = new FormData();formData.append('file',file);" +
-                                // "formData.append('path','e://桌面//');" +
+                                "formData.append('uuid',window.articleUUID);" +
                                 "window.axios.post(" +
                                     "window.API.URL.UPLOAD_ONE_FILE," +
                                     "formData," +
